@@ -1,0 +1,23 @@
+{
+  "name": "slacker",
+  "version": "1.0.0",
+  "description": "A bot for Slack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/broberts2/slacker.git"
+  },
+  "author": "Broc Roberts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/broberts2/slacker/issues"
+  },
+  "homepage": "https://github.com/broberts2/slacker#readme",
+  "dependencies": {
+    "@slack/bolt": "^2.4.1",
+    "@slack/events-api": "^2.3.4"
+  }
+}
