@@ -1,6 +1,6 @@
 const { createServer } = require("http");
 const config = require("./config");
-const http = serverConfig.production ? require("https") : require("http");
+const http = config.production ? require("https") : require("http");
 const express = require("express");
 const bodyParser = require("body-parser");
 const { createEventAdapter } = require("@slack/events-api");
@@ -26,7 +26,7 @@ app.use(bodyParser());
 
 let server = null;
 
-if (serverConfig.production) {
+if (config.production) {
   const key = fs.readFileSync(
     "/etc/letsencrypt/live/www.arclight-react.arclight.cc/privkey.pem"
   );
