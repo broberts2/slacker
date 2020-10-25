@@ -32,10 +32,10 @@ if (config.production) {
     "/etc/letsencrypt/live/www.arclight-react.arclight.cc/privkey.pem"
   );
   const cert = fs.readFileSync(
-    "/etc/letsencrypt/live/www.arclight-react.arclight.cccert.pem"
+    "/etc/letsencrypt/live/www.arclight-react.arclight.cc/cert.pem"
   );
   const ca = fs.readFileSync(
-    "/etc/letsencrypt/live/www.arclight-react.arclight.ccchain.pem"
+    "/etc/letsencrypt/live/www.arclight-react.arclight.cc/chain.pem"
   );
   server = http.createServer({ key, cert, ca }, app);
 } else {
