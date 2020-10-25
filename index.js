@@ -1,5 +1,6 @@
 const { createServer } = require("http");
 const config = require("./config");
+const fs = require("fs");
 const http = config.production ? require("https") : require("http");
 const express = require("express");
 const bodyParser = require("body-parser");

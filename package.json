@@ -18,6 +18,7 @@
   "homepage": "https://github.com/broberts2/slacker#readme",
   "dependencies": {
     "@slack/bolt": "^2.4.1",
-    "@slack/events-api": "^2.3.4"
+    "@slack/events-api": "^2.3.4",
+    "fs": "0.0.1-security"
   }
 }
