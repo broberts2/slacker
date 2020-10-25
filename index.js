@@ -27,9 +27,15 @@ app.use(bodyParser());
 let server = null;
 
 if (serverConfig.production) {
-  const key = fs.readFileSync("/etc/letsencrypt/live/arclight.cc/privkey.pem");
-  const cert = fs.readFileSync("/etc/letsencrypt/live/arclight.cc/cert.pem");
-  const ca = fs.readFileSync("/etc/letsencrypt/live/arcligh.cc/chain.pem");
+  const key = fs.readFileSync(
+    "/etc/letsencrypt/live/www.arclight-react.arclight.cc/privkey.pem"
+  );
+  const cert = fs.readFileSync(
+    "/etc/letsencrypt/live/www.arclight-react.arclight.cccert.pem"
+  );
+  const ca = fs.readFileSync(
+    "/etc/letsencrypt/live/www.arclight-react.arclight.ccchain.pem"
+  );
   server = http.createServer({ key, cert, ca }, app);
 } else {
   server = http.createServer(app);
